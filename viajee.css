@@ -1,0 +1,195 @@
+.menu {     /* ESTILO DEL MENÚ */  
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 5px 20px;   
+}
+
+.logo-img {        /*CONFIG. DEL LOGO*/
+    height: 50px;       
+    width: auto;        
+    display: block;
+    transition: 0.3s;   
+}
+
+.logo-img:hover {    /*EFECTO DE ZOOM EN EL LOGO*/
+    transform: scale(1.1); 
+}
+
+/* ESTILOS DEL CUERPO */
+body {          
+    font-family: Arial, sans-serif;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('https://www.rd.com/wp-content/uploads/2025/08/Heres-Why-Planes-Feel-Like-Theyre-Dropping-During-Takeoff_GettyImages-2170104508_GSedit_FT.jpg'); 
+    
+    background-size: cover;       
+    background-position: center;  
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;            
+}
+
+h1 {
+    color: white;
+    background-color: #0099cc;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.introduccion {
+    background: rgba(255, 255, 255, 0.9); 
+    margin: 40px auto;
+    padding: 30px;
+    width: 80%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.introduccion h2 {
+    color: #0099cc;
+    margin-bottom: 25px;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.item h3 {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.item p {
+    color: #666;
+}
+
+p {
+    color: #030303;
+    line-height: 1.6;
+}
+
+img {    /* ESTILOS GENERALES PARA LAS IMÁGENES */ 
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+    height: auto;
+    object-fit: cover;
+}
+
+.contenedor-flex {    /* ESTILO DEL CONTENEDOR DE LOS DESTINOS */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.destino {    /* ESTILO DE CADA DESTINO (Kioto, París, Bariloche) */
+    background-color: white;
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 15px;
+    transition: 0.3s; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.detalles {
+    background-color: #f4f4f4; 
+    border-radius: 8px;
+    padding: 10px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    border-left: 4px solid #0099cc; 
+}
+
+.detalles p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.precio-destacado {
+    color: #27ae60; 
+    font-size: 1.1rem;
+}
+.destino img {   /* ESTO SE APLICA A LAS IMÁGENES DENTRO DE CADA DESTINO */
+    width: 100%;
+    height: 100%;    
+    object-fit: cover; 
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.destino:hover img {   /* ESTO HACE QUE LA IMAGEN VUELVA A COLOR AL PASAR EL MOUSE */
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+#principal {
+    border: 3px solid white; 
+}
+
+.destino:hover {      /* LA TARJETA SE AGRANDA Y CAMBIA DE COLOR AL PASAR EL MOUSE */
+    transform: scale(1.05);
+    background-color: #e6f7ff;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+.redes {
+    display: flex;
+    margin: 10px 0;
+    justify-self: center;
+    gap: 20px;
+}
+.redes a:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.busqueda {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+.busqueda input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.busqueda button {
+    padding: 10px 20px;
+    background-color: #0099cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.busqueda button:hover {
+    background-color: #0077aa;
+    transform: scale(1.05);
+}
